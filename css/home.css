@@ -1,0 +1,113 @@
+.page-home {
+    background: url('../assets/icones/home-background.svg') no-repeat;
+    background-position: 35vw bottom;
+    
+    height: 100vh;
+
+}
+
+#page-home header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 48px;
+}
+
+#page-home .content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header a {
+    display: flex;
+
+    color: var(--titleColor);
+    font-weight: 700;
+}
+
+#page-home header a span {
+    background-image: url('../assets/icones/log-in.svg');
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+#page-home main {
+    max-width: 560px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+#page-home main h1 {
+    font-size: 54px;
+}
+
+#page-home main p { 
+   font-size: 24px;
+   line-height: 38px;
+   margin-top: 24px; 
+}
+
+#page-home main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    background-color: var(--primaryColor);
+
+    color: #ffffff;
+    font-weight: 700;
+
+    transition: 0.4s background-color;
+}
+
+#page-home main a:hover {
+    background-color: #2fb86e;
+}
+
+#page-home main a .aText {
+    display: flex;
+    margin: 0 auto;
+}
+
+#page-home main a .spanIcon {
+    width: 72px;
+    height: 72px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#page-home main a .spanIcon::after {
+    content: "";
+    background-image: url('../assets/icones/search.svg');
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}

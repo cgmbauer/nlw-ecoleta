@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/create-point.css">
+    <link rel="stylesheet" href="./css/querys.css">
+
+    <title>Criar um ponto de coleta</title>
+</head>
+
+<body>
+    <div id="page-create-point" class="page-create-point">
+
+        <header>
+            <img src="./assets/icones/logo.svg" alt="Logomarca">
+            <a href="#"> 
+                <span></span>
+                Voltar para Home
+            </a>
+        </header>
+
+        <main>
+            <form action="#">
+                <h1> Cadastro do ponto de coleta</h1>
+                
+                <fieldset>
+                    <legend>
+                        <h2> Dados da Entidade</h2>
+                    </legend>
+
+                    <div class="field">
+                        <label for="name"> Nome da enteidade</label>
+                        <input id="name" type="text" name="name" required>
+                    </div>
+
+                    <div class="field-group">
+                        
+                        <div class="field">
+                            <label for="adress"> Endereço </label>
+                            <input id="adress" type="text" name="adress" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="number"> Número </label>
+                            <input id="number" type="number" name="number" required>
+                        </div>
+
+                    </div>
+
+                    <div class="field"> <!-- Adicionado por mim. Editar na hora do backkend! -->
+                        <label for="adressComp"> Complemento </label>
+                        <input id="adressComp" type="text" name="adressComp">
+                    </div>
+
+                    <div class="field-group">
+
+                        <div class="field">
+                            <label for="state"> Estado </label>
+                            <select name="uf" id="state" required>
+                                <option value=""> Selecione o Estado</option>
+                            </select>
+                            <input type="hidden" name="state"> <!-- campo escondido, receberá o nome do estado selecionado acima-->
+                        </div>
+
+                        <div class="field">
+                            <label for="city"> Cidade </label>
+                            <select name="city" id="city" disabled required>
+                                <option value=""> Selecione a Cidade</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <h2>Ítens de coleta</h2>
+                    </legend>
+                </fieldset>
+
+                <button type="submit"> CADASTRAR </button>
+            </form>
+        </main>
+
+    </div>
+
+<script src="./scripts/create-point.js"></script>
+</body>
+
+</html>
