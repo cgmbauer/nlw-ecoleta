@@ -1,0 +1,27 @@
+{
+  "name": "NLW_Starter",
+  "version": "1.0.0",
+  "description": "This page aims to help people find waste and recycle collection points, making a link between them and the organizations responsibles for collecting the residues.    \r Web application made during Rocketseat's Next Level Week.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgmbauer/nlw-ecoleta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgmbauer/nlw-ecoleta/issues"
+  },
+  "homepage": "https://github.com/cgmbauer/nlw-ecoleta#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

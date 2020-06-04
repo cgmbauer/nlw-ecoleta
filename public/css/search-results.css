@@ -27,7 +27,7 @@ body::after {
     align-items: center;
 }
 
-.page-search-results header a .spanIconH {
+.page-search-results header a .spanIcon {
     background-image: url('../assets/icones/arrow-left.svg');
 
     display: inline-block;

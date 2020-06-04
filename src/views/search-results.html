@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <link rel="stylesheet" href="./css/main.css">
+{% extends "layout.html" %}
+
+{% set divId = "page-search-results" %}
+{% set divClass = "page-search-results" %}
+
+{% block styles %}
     <link rel="stylesheet" href="./css/search-results.css">
-    <link rel="stylesheet" href="./css/querys.css">
+{% endblock styles %}
 
+{% block title %}
     <title>Resultado da Pesquisa</title>
-</head>
+    {# se o arquivo não tiver o bloco title, esse será o padrão#}
+{% endblock title %}
 
-<body>
-    <div id="page-search-results" class="page-search-results">
-
-        <header>
-            <img src="./assets/icones/logo.svg" alt="Logomarca">
-            <a href="index.html"> 
-                <span class="spanIconH"></span>
-                <span class="textHideQuery"> Voltar para Home </span>
-                <span class="textQuery"> Voltar </span>
-            </a>
-        </header>
+{% block content %}
+    {% include "partials/page-header.html" %}
 
         <main>
             
@@ -85,10 +77,36 @@
             </div>
 
         </main>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="./scripts/create-point.js"></script>
+{% endblock scripts %}
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+
+    
+
+
+
         
-    </div>
 
-<script src="./scripts/create-point.js"></script>
-</body>
 
-</html>
+
