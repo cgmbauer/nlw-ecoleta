@@ -1,25 +1,51 @@
 /* Querys */
 
-@media (max-width: 900px) {
+/*  HOME PAGE   */
+
+@media (max-width: 500px) {
     .page-home {
-        background-position: 80vw;
+        background-position: 100vw;
     }
 
-    #page-home .content {
+    .page-home header a .textHideQuery {
+        display: none;
+    }
+
+    .page-home header a .textQuery {
+        display: initial;
+    }
+
+    .page-home header a .spanIconH {
+        margin-right: 10px;
+    }
+
+    .page-home main {
         align-items: center;
         text-align: center;
+        margin: 0 auto;
     }
 
-    #page-home main {
+} 
+
+@media (min-width: 501px) and (max-width: 770px) {
+    .page-home {
+        background-position: 100vw;
+    }
+
+    .page-home header a .textHideQuery {
+        display: initial;
+    }
+
+    .page-home header a .textQuery {
+        display: none;
+    }
+
+    .page-home main {
         align-items: center;
+        text-align: center;
+        margin: 0 auto;
     }
 
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
-        left: 50%; 
-        transform: translateX(-50%);
-    }
 }
 
 @media (min-width: 1700px) {
@@ -34,4 +60,110 @@
         background-position-y: 120px;
     }
 
+}
+
+/*  CADASTRO   */
+
+@media (max-width: 500px) {
+    .page-create-point header a .textHideQuery {
+        display: none;
+    }
+
+    .page-create-point header a .textQuery {
+        display: initial;
+    }
+
+    .page-create-point header a .spanIconH {
+        margin-right: 10px;
+    }
+
+    .page-create-point main {
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    form {
+        box-sizing: border-box;
+        padding: 30px 10px;
+    }
+
+    form .field-group {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+
+    form input, form select {
+        padding: 16px 0px;
+    }
+
+    form .field-group .field + .field {
+        margin-left: 0px;
+    }
+
+    .items-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+  
+    }
+
+    .items-grid li {
+        padding: 30px 5px 0 5px;
+    }
+
+} 
+
+/* RESULTADOS DA BUSCA */
+
+@media (max-width: 500px) {
+    .page-search-results header a .textHideQuery {
+        display: none;
+    }
+
+    .page-search-results header a .textQuery {
+        display: initial;
+    }
+
+    .page-search-results header a .spanIconH {
+        margin-right: 10px;
+    }
+
+    main .cards {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 0;
+    }
+    
+    main .card {
+        width: 320px;
+    }
+
+    main .card img {
+        width: 320px;
+        height: 200px;
+    
+        object-fit: cover;
+        
+        border-radius: 8px 8px 0 0;
+    }
+}
+
+@media (max-width: 800px) {
+    main .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0;
+    }
+    
+    main .card {
+        width: 300px;
+    }
+
+    main .card img {
+        width: 300px;
+        height: 200px;
+    
+        object-fit: cover;
+        
+        border-radius: 8px 8px 0 0;
+    }
 }

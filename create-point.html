@@ -16,9 +16,10 @@
 
         <header>
             <img src="./assets/icones/logo.svg" alt="Logomarca">
-            <a href="#"> 
-                <span></span>
-                Voltar para Home
+            <a href="index.html"> 
+                <span class="spanIcon"></span>
+                <span class="textQuery"> Voltar </span>
+                <span class="textHideQuery"> Voltar para Home </span>
             </a>
         </header>
 
@@ -32,7 +33,7 @@
                     </legend>
 
                     <div class="field">
-                        <label for="name"> Nome da enteidade</label>
+                        <label for="name"> Nome da Entidade</label>
                         <input id="name" type="text" name="name" required>
                     </div>
 
@@ -80,14 +81,40 @@
 
                 <fieldset>
                     <legend>
-                        <h2>Ítens de coleta</h2>
+                        <h2>Ítens de Coleta</h2>
                     </legend>
+
+                    <div id="grid">
+                        <ul class="items-grid">
+                            <li data-id="1">
+                                <img src="./assets/icones/lampadas.svg" alt="lampadas"><span>Lâmpadas</span>
+                            </li>
+                            <li data-id="2">
+                                <img src="./assets/icones/baterias.svg" alt="pilhas e baterias"><span>Pilhas e Baterias</span>
+                            </li>
+                            <li data-id="3">
+                                <img src="./assets/icones/papeis-papelao.svg" alt="papeis e papelão"><span>Papeis e Papelão</span>
+                            </li>
+                            <li data-id="4">
+                                <img src="./assets/icones/eletronicos.svg" alt="resíduos eletrônicos"><span>Resíduos Eletrônicos</span>
+                            </li>
+                            <li data-id="5">
+                                <img src="./assets/icones/organicos.svg" alt="resíduos orgânicos"><span>Resíduos Orgânicos</span>
+                            </li>
+                            <li data-id="6">
+                                <img src="./assets/icones/oleo.svg" alt="óleo de cozinha"><span>Óleo de Cozinha</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <input type="hidden" name="items">
+
                 </fieldset>
 
                 <button type="submit"> CADASTRAR </button>
             </form>
         </main>
-
+        
     </div>
 
 <script src="./scripts/create-point.js"></script>

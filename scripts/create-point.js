@@ -7,6 +7,14 @@ function sortData(dataSorted) { // coloca em ordem alfabética
     );
 }
 
+function sortArrayAscending(arr) {
+    return (
+        arr.sort((a,b) => {
+        return a === b ? 0 : a < b ? -1 : 1;
+    })
+    );
+}
+
 function fetchData(url) {
     return ( // retorna dataSorted para a função origem (populateUFs ou populateCities)
         fetch(url)
@@ -21,6 +29,8 @@ function fetchData(url) {
         })
     )
 }
+
+// DADOS DA ENTIDADE:
 
 async function populateUFs() {
     const ufSelect = document.querySelector("select[name=uf]");
@@ -51,12 +61,64 @@ async function populateCities() {
 
     const dataSorted = await fetchData(url);
 
+
+    citySelect.innerHTML = '<option value="">Selecione a Cidade</option>'; // renicia o campo cidade, caso o valor do estado seja trocado (para recarregar as cidades)
+    citySelect.disabled = true; // bloqueia o campo, caso o usuário troque o estado
+
     for (let i = 0; i < dataSorted.length; i++) {
-        citySelect.innerHTML += `<option value="${dataSorted[i].id}">${dataSorted[i].nome}</option>`
+        citySelect.innerHTML += `<option value="${dataSorted[i].nome}">${dataSorted[i].nome}</option>`
     }
 
     citySelect.disabled = false; // habilita seleção de campo
 }
 
-document.querySelector("select[name=uf]") // seleciona campo uf
-    .addEventListener("change", populateCities) // quando mudar o uf, chama função populateCities
+document
+    .querySelector("select[name=uf]") // seleciona campo uf
+    .addEventListener("change", populateCities); // quando mudar o uf, chama função populateCities
+
+
+// ÍTENS DE COLETA:
+
+const itemsToCollect = document.querySelectorAll(".items-grid li");
+
+let selectedItems = []; // array que guardará itens selecionados
+const collectedItems = document.querySelector("input[name=items]"); 
+
+
+function handleSelectedItem() {
+
+    const itemLi = event.target
+
+    itemLi.classList.toggle("selected"); // vai em cada li, olha dentro das classes daquele elemento li
+                                         // se o elemento tiver clase "selected", ela será deletada
+                                         // se o elemento tiver não tiver classe "selected", ela será adicionada
+                                         // isso é graças ao .toggle
+                                         
+                                        
+    const itemId = itemLi.dataset.id;
+
+    let alreadySelected = selectedItems.indexOf(itemId); // encontra index
+
+    if (alreadySelected >= 0) {
+        const filteredItems = selectedItems.filter( item => {
+            const itemIsDifferent = item != itemId; // se o item do array for diferente ao item selecionado, retorna true
+            return itemIsDifferent; // apenas os valores que retornarem true entrarmam em itemIsDifferent
+        })
+
+        selectedItems = [...filteredItems] // nova selação será apenas dos items não selecionados anteriormente
+  
+    } else {
+        selectedItems.push(itemId); // caso o item não tenha sido selecionado, será adicionado ao array
+    }
+
+    selectedItems = sortArrayAscending(selectedItems); // coloca em ordem crescente
+
+    collectedItems.value = [...selectedItems]; // adiciona os itens selecionados no input escondido
+    
+}   
+
+
+for (let i = 0; i < itemsToCollect.length; i++) {
+    itemsToCollect[i].addEventListener("click", handleSelectedItem)
+}
+

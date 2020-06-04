@@ -6,7 +6,7 @@
 
 }
 
-#page-home header {
+.page-home header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@
     margin-top: 48px;
 }
 
-#page-home .content {
+.page-home .content {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
@@ -24,14 +24,14 @@
     flex-direction: column;
 }
 
-#page-home header a {
+.page-home header a {
     display: flex;
 
     color: var(--titleColor);
     font-weight: 700;
 }
 
-#page-home header a span {
+.page-home header a .spanIconH {
     background-image: url('../assets/icones/log-in.svg');
 
     display: inline-block;
@@ -40,7 +40,11 @@
     margin-right: 16px;
 }
 
-#page-home main {
+.page-home header a .textQuery {
+    display: none;
+}
+
+.page-home main {
     max-width: 560px;
 
     display: flex;
@@ -49,17 +53,17 @@
     justify-content: center;
 }
 
-#page-home main h1 {
+.page-home main h1 {
     font-size: 54px;
 }
 
-#page-home main p { 
+.page-home main p { 
    font-size: 24px;
    line-height: 38px;
    margin-top: 24px; 
 }
 
-#page-home main a {
+.page-home main a {
     width: 100%;
     max-width: 360px;
     height: 72px;
@@ -79,16 +83,16 @@
     transition: 0.4s background-color;
 }
 
-#page-home main a:hover {
+.page-home main a:hover {
     background-color: #2fb86e;
 }
 
-#page-home main a .aText {
+.page-home main a .aText {
     display: flex;
     margin: 0 auto;
 }
 
-#page-home main a .spanIcon {
+.page-home main a .spanIcon {
     width: 72px;
     height: 72px;
 
@@ -103,7 +107,7 @@
 
 }
 
-#page-home main a .spanIcon::after {
+.page-home main a .spanIcon::after {
     content: "";
     background-image: url('../assets/icones/search.svg');
 

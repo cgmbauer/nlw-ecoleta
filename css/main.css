@@ -10,12 +10,13 @@
 
     --titleColor: #322153;
     --primaryColor: #34cb79;
+    --bgColor: #f0f0f5;
 
     box-sizing: border-box;
 }
 
 body {
-    background: #f0f0f5;
+    background: var(--bgColor);
 }
 
 h1, h1, h3, h4, h5, h6 {

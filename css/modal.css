@@ -1,0 +1,100 @@
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(14, 10, 20, 0.9);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.4s;
+}
+
+.hide {
+    display: none;
+}
+
+.modal .content {
+    color: #ffffff;
+
+    width: 420px;
+}
+
+.modal .content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+}
+
+.modal .content .header a {
+    background-image: url("../assets/icones/x.svg");
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    font-size: 0.01px;  /*  para ajudar leitores de telas a encontrar o texto  */
+}
+
+.modal .content .header h1 {
+    color: #ffffff;
+
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.modal form .field {
+    display: flex;
+}
+
+.modal form input {
+    flex: 1;    
+
+    background-color: var(--bgColor);
+
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    outline: 0;
+
+    padding: 16px 24px;
+
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+.modal form button {
+    width: 72px;
+    height: 72px;
+
+    background-color: var(--primaryColor);
+    transition: background-color 0.4s;
+
+    border: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.modal form button:hover {
+    background-color: #2fb86e;
+}
+
+
+
+.hide-element { /*  ajudar leitores de tela a encontrar o label  */
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

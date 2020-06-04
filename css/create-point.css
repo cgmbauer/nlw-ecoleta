@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.page-create-point header a span {
+.page-create-point header a .spanIcon {
     background-image: url('../assets/icones/arrow-left.svg');
 
     display: inline-block;
@@ -30,6 +30,10 @@
     height: 24px;
 
     margin-right: 16px;
+}
+
+.page-create-point header a .textQuery {
+    display: none;
 }
 
 form {
@@ -41,6 +45,7 @@ form {
     border-radius: 8px;
 
     max-width: 730px;
+
 }
 
 form h1 {
@@ -75,7 +80,7 @@ form .field-group {
 }
 
 form input, form select {
-    background-color: #f0f0f5;
+    background-color: var(--bgColor);
 
     border: 0;
     border-radius: 8px;
@@ -103,6 +108,69 @@ form .field-group .field + .field {
     margin-left: 24px;
 }
 
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #f5f5f5;
+
+    list-style: none;
+
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: box-shadow 0.4s;
+}
+
+.items-grid li:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.7);
+    
+}
+
+.items-grid li span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    color: var(--titleColor);
+    font-weight: 700;
+
+    margin-top: 12px;
+}
+
+.items-grid li span, .items-grid li img {
+    pointer-events: none;  /* faz com que apenas o elemento pai seja clicável  */
+}
+
+.items-grid li.selected {
+    background-color: #e1faec;
+
+    border: 2px solid #34cb79;
+
+    font-weight: 700;
+}
+
+.items-grid li.selected:hover {
+    box-shadow: none;
+}
+
 form button {
     width: 260px;
     height: 56px;
@@ -111,6 +179,7 @@ form button {
 
     border-radius: 8px;
     border: 0;
+    outline: none;
 
     color: #ffffff;
     font-weight: 700;
@@ -119,9 +188,13 @@ form button {
 
     transition: background-color 0.4s;
     
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 form button:hover {
     background-color: #2fb86e;
+
 }
 
