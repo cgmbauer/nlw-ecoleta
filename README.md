@@ -14,7 +14,7 @@ This is an ongoing project.
 
 - CSS
 
--Vanilla JS
+- Vanilla JS
 
 **MORE UPDATES SOON**
 
