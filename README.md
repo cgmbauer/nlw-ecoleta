@@ -10,11 +10,17 @@ This is an ongoing project.
 
 ## Built With
 
-- HTML
+- HTML;
 
-- CSS
+- CSS;
 
-- Vanilla JS
+- Vanilla JS;
+
+- [Nodejs](https://nodejs.org/en/);
+
+- [Express](https://expressjs.com/pt-br/);
+
+- [Nunjucks](https://github.com/mozilla/nunjucks).
 
 **MORE UPDATES SOON**
 
