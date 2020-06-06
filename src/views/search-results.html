@@ -14,15 +14,34 @@
 
 {% block content %}
     {% include "partials/page-header.html" %}
+    
 
         <main>
-            
+        
+            {% if total > 0 %}
             <h4>
-                <span>2 pontos</span> encontrados.
+                <span>{{total}} pontos</span> encontrados.
             </h4>
 
             <div class="cards">
-                <div class="card">
+
+                {% for place in places %}
+                    <div class="card">
+
+                    <img src="{{place.imgurl}}" alt="Colectoria">
+                    <h2> {{place.name}} </h2>
+                    <h3> {{place.items}} </h3>
+                    <p>
+                        {{place.state}}, {{place.city}} </br>
+                        {{place.address}}, {{place.number}}</br>
+                        {{place.addresscomp}} </br>
+                        
+                    </p>
+
+                </div>
+                {% endfor %}
+
+                {# <div class="card">
 
                     <img src="./assets/card_dummy.jpg" alt="Colectoria">
                     <h2> Colectoria </h2>
@@ -72,9 +91,15 @@
                         Lorem, ipsum dolor.
                     </p>
 
-                </div>
+                </div> #}
                 
             </div>
+            {% else %}
+                <h4>
+                    <span> Nenhum </span> local encontrado.
+                </h4>
+            {% endif %}  
+
 
         </main>
 {% endblock content %}

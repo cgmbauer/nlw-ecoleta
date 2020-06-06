@@ -98,3 +98,14 @@
     position: absolute;
     width: 1px;
 }
+
+/*  POINT-CREATED MODAL  */
+
+.modal .point-created {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .point-created h1 {
+    margin-top: 10px;
+}

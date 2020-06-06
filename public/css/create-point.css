@@ -191,6 +191,8 @@ form button {
     display: block;
     margin-right: auto;
     margin-left: auto;
+
+    cursor: pointer;
 }
 
 form button:hover {
