@@ -51,3 +51,28 @@ Some javascript code were made to fetch the API data, treat it, and display it o
 
 - [IBGE](https://servicodados.ibge.gov.br/api/docs) for the API.
 
+## Pictures
+- Main Page
+
+![Main Page](https://github.com/cgmbauer/nlw-ecoleta/blob/master/public/assets/pages/1.%20main_page_desktop.png)
+
+- Create Point
+
+![Create Point](https://github.com/cgmbauer/nlw-ecoleta/blob/master/public/assets/pages/2.%20create_point_desktop.png)
+
+- Create Point filled
+
+![Create Point filled](https://github.com/cgmbauer/nlw-ecoleta/blob/master/public/assets/pages/3.%20create_point_filled_desktop.png)
+
+- Point Created
+
+![Point Created](https://github.com/cgmbauer/nlw-ecoleta/blob/master/public/assets/pages/4.%20point_created_page_desktop.png)
+
+- Search
+
+![Search](https://github.com/cgmbauer/nlw-ecoleta/blob/master/public/assets/pages/5.%20search_page_desktop.png)
+
+- Search Results
+
+![Search Results](https://github.com/cgmbauer/nlw-ecoleta/blob/master/public/assets/pages/6.%20search_results_desktop.png)
+
