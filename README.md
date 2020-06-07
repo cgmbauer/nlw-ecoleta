@@ -27,7 +27,7 @@ This webpage use Nunjucks to make the content dynamic as the user interacts with
 
 It also use an API from the IBGE, which pulls the names of all citys and its respectives states located in Brazil.  
 
-Some javascript code were made to fetch the API data, treat it, and to display it on the webpage, as the user interacts.
+Some javascript code were made to fetch the API data, treat it, and display it on the webpage, as the user interacts.
 
 **The website have 4 main pages:**  
 
