@@ -11,13 +11,13 @@ Web application made during Rocketseat's Next Level Week.
 
 - Vanilla JS;
 
-- [Nodejs](https://nodejs.org/en/);
+- [Nodejs v.12.18.0](https://nodejs.org/en/);
 
-- [Express](https://expressjs.com/pt-br/);
+- [Express v.4.17.1](https://expressjs.com/pt-br/);
 
-- [SQLite](https://www.sqlite.org/index.html);
+- [SQLite v.4.2.0](https://www.sqlite.org/index.html);
 
-- [Nunjucks](https://github.com/mozilla/nunjucks);
+- [Nunjucks v.3.2.1](https://github.com/mozilla/nunjucks);
 
 - [IBGE API](https://servicodados.ibge.gov.br/api/docs).
 
