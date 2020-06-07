@@ -35,7 +35,7 @@ Some javascript code were made to fetch the API data, treat it, and display it o
 
 - Search Page: Where the user can search for registered collect points using the city as an argument;
 
--Search Results: Where user can see the collect points registered;
+- Search Results: Where user can see the collect points registered;
 
 - Create-Point Page: Where you can register a collect point, adding the entity name, address, items to be collected (cardboards, battery, oils, etc.).
 
