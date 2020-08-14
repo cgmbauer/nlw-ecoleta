@@ -1,7 +1,10 @@
 # Ecoleta - Next Level Week
 
 This page aims to help people find waste collect points, making a link between them and the organizations responsibles for collecting the residues.    
-Web application made during Rocketseat's Next Level Week.
+Web application made during Rocketseat's Next Level Week.  
+
+
+![Ecoleta Gif](https://github.com/cgmbauer/assets/blob/master/gifs/ecoletaspeedup.gif)
 
 ## Built With
 
